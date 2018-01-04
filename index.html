@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tizen relay</title>
+    <style>
+      body { font-family: sans-serif; font-size: 11px; }
+    </style>
+  </head>
+
+  <body>
+    <h1>tizen relay</h1>
+
+    <form action="/receive" method="POST" enctype="multipart/form-data">
+      <input type="file" name="package">
+      <br/>
+
+      <input type="submit" value="send file for deployment">
+    </form>
+
+    <hr/>
+
+    <form action="/iframe" method="POST" enctype="application/x-www-form-urlencoded">
+      <label>ip</label>
+      <input type="text" name="ip" value="10.241.10.42">
+      <br/>
+
+      <label>port</label>
+      <input type="number" name="port" value="8080">
+      <br/>
+
+      <input type="submit" value="generate iframe app and deploy">
+    </form>
+  </body>
+</html>

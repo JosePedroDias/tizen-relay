@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://test.com" version="1.0.0" height="720" width="1280" viewmodes="fullscreen">
+    <access origin="*" subdomains="true"/>
+    <tizen:application id="$PACKAGE.$APP" package="$PACKAGE" required_version="2.1"/>
+    <content src="iframe.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <name>$APP</name>
+    <tizen:profile name="tv-samsung-public"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
